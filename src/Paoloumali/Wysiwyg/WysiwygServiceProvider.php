@@ -18,7 +18,8 @@ class WysiwygServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('paoloumali/wysiwyg');
+		$this->package('paoloumali/wysiwyg', 'ck');
+		include __DIR__.'/../../routes.php';
 	}
 
 	/**
